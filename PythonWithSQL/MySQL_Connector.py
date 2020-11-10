@@ -7,7 +7,7 @@ def create_connection(host_name, user_name, user_password, db_name):
         connection = mysql.connector.connect(
             host = host_name,
             user = user_name,
-            passwd = user_password
+            passwd = user_password,
             database = db_name
         )
         print("Connection to MySQL DB successful")
@@ -16,4 +16,4 @@ def create_connection(host_name, user_name, user_password, db_name):
 
     return connection
 
-connection = create_connection("localhost", "root","")
+connection = create_connection("localhost", "root","", "sm_app")
